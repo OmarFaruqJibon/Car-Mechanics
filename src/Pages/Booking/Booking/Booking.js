@@ -6,7 +6,7 @@ const Booking = () => {
 
 
     const [service, setService] = useState([]);
-    const url = `http://localhost:5000/services/${serviceId}`;
+    const url = `https://car-mechanics-server.up.railway.app/services/${serviceId}`;
     useEffect(() => {
         fetch(url)
             .then(res => res.json())

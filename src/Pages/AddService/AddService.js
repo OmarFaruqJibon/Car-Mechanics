@@ -8,7 +8,7 @@ const AddService = () => {
     const onSubmit = data => {
         console.log(data);
 
-        axios.post('http://localhost:5000/sevices', data)
+        axios.post('https://car-mechanics-server.up.railway.app/sevices', data)
         .then(res=>{
             console.log(res);
             if(res.data.insertedId){
